@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_app2/src/feature/splash/splash.dart';
+import 'package:flutter_app2/src/feature/splash/view/splash.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
