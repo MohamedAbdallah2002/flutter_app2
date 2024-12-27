@@ -135,7 +135,6 @@ String getShape(double massHuman) {
                   'Mass: ${massHuman.toStringAsFixed(2)} kg/m²', 
                   style: textStyle1(),
                 ), 
-                SizedBox(height: 10,),
                  Text(
                   'Body Condition : ${getShape(massHuman)}', 
                   style: textStyle1(),
