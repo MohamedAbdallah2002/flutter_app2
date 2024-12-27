@@ -20,6 +20,6 @@ class CustomElavtedButton extends StatelessWidget {
                 .showSnackBar(SnackBar(content: Text(txt1)));
           }
         },
-        child: Text(txt2, style: TextStyle(color: Colors.lightBlue)));
+        child: Text(txt2, style: const TextStyle(color: Colors.lightBlue)));
   }
 }

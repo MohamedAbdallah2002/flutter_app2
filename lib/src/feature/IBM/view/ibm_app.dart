@@ -47,7 +47,17 @@ class _IbmAppState extends State<IbmApp> {
       }
     }
   }
-
+String getShape(double massHuman) {
+    if (massHuman < 18.5) {
+      return "Skinny";
+    } else if (massHuman >= 18.5 && massHuman < 24.9) {
+      return "Normal";
+    } else if (massHuman >= 25 && massHuman < 29.9) {
+      return "Overweight";
+    } else {
+      return "Obese";
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -123,6 +133,11 @@ class _IbmAppState extends State<IbmApp> {
                 ),
                 Text(
                   'Mass: ${massHuman.toStringAsFixed(2)} kg/m²', 
+                  style: textStyle1(),
+                ), 
+                SizedBox(height: 10,),
+                 Text(
+                  'Body Condition : ${getShape(massHuman)}', 
                   style: textStyle1(),
                 ),
                 ElevatedButton(
